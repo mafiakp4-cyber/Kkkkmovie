@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 # Bot configuration
 BOT_TOKEN = os.getenv("TG_BOT_TOKEN") or " Token Daal Dei"
-OMDB_KEY = os.getenv("OMDB_API_KEY") or "ath api key"
+OMDB_KEY = os.getenv("8d917eec") or "ath api key"
 OMDB_URL = "https://www.omdbapi.com/"
 
 # Initialize bot and Flask app
