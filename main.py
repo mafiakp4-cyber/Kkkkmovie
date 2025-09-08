@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 # Bot configuration
 BOT_TOKEN = os.getenv("TG_BOT_TOKEN") or "7985300275:AAF9-8JYiHcEEHPU3l35FVMyBDO7wPZSc64"
 OMDB_KEY = os.getenv("OMDB_API_KEY") or "8d917eec"
-OMDB_URL = "https://www.omdbapi.com/"
+OMDB_URL = "https://api.telegram.org/bot7985300275:AAF9-8JYiHcEEHPU3l35FVMyBDO7wPZSc64/setWebhook?url=https://movie-bot.onrender.com/webhook"
 
 # Initialize bot and Flask app
 bot = TeleBot(BOT_TOKEN)
