@@ -12,8 +12,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Bot configuration
-BOT_TOKEN = os.getenv("TG_BOT_TOKEN") or " Token Daal Dei"
-OMDB_KEY = os.getenv("OMDB_API_KEY") or "ath api key"
+BOT_TOKEN = os.getenv("TG_BOT_TOKEN") or " 7985300275:AAF9-8JYiHcEEHPU3l35FVMyBDO7wPZSc64"
+OMDB_KEY = os.getenv("OMDB_API_KEY") or "8d917eec"
 OMDB_URL = "https://www.omdbapi.com/"
 
 # Initialize bot and Flask app
@@ -120,7 +120,7 @@ def format_movie_info(movie):
     message += f"🗣️ *Language:* {language}\n\n"
     message += f"📖 *Plot:*\n{plot}\n\n"
     message += "━━━━━━━━━━━━━━━━━━━━\n"
-    message += "🎭 *Powered by* [BhediyaTheater](https://t.me/bhediyatheater)"
+    message += "🎭 *Powered by* [Tigertheater](https://t.me/+Tbkw7GQzcB05M2U9)"
     
     # Ensure message is within Telegram limits
     if len(message) > TELEGRAM_MESSAGE_LIMIT:
@@ -131,7 +131,7 @@ def format_movie_info(movie):
         message += f"⏱️ *Runtime:* {runtime}\n"
         message += f"🎪 *Director:* {director}\n\n"
         message += f"📖 *Plot:*\n{plot}\n\n"
-        message += "🎭 *Powered by* [BhediyaTheater](https://t.me/bhediyatheater)"
+        message += "🎭 *Powered by* [Tigertheater](https://t.me/+Tbkw7GQzcB05M2U9)"
     
     return message, movie.get('Poster', None)
 
@@ -218,7 +218,7 @@ I can help you with:
 • Ask for suggestions: `suggest funny hindi movies`
 • Get genre recommendations: `horror movies`
 
-🎭 *Powered by* [BhediyaTheater](https://t.me/bhediyatheater)
+🎭 *Powered by* [Tigertheater](https://t.me/+Tbkw7GQzcB05M2U9)
     """
     send_safe_message(message.chat.id, welcome_text)
 
@@ -240,7 +240,7 @@ def help_command(message):
 • `horror movie suggestions`
 • `best action movies`
 
-🎭 *Powered by* [BhediyaTheater](https://t.me/bhediyatheater)
+🎭 *Powered by* [Tigertheater](https://t.me/+Tbkw7GQzcB05M2U9)
     """
     send_safe_message(message.chat.id, help_text)
 
@@ -259,7 +259,7 @@ def handle_message(message):
             
             suggestion_text += "\n━━━━━━━━━━━━━━━━━━━━\n"
             suggestion_text += "💡 *Tip:* Send any movie name to get detailed info!\n"
-            suggestion_text += "🎭 *Powered by* [BhediyaTheater](https://t.me/bhediyatheater)"
+            suggestion_text += "🎭 *Powered by* [Tigertheater](https://t.me/+Tbkw7GQzcB05M2U9)"
             
             send_safe_message(message.chat.id, suggestion_text)
         else:
@@ -290,10 +290,10 @@ def handle_message(message):
             suggestion_text += "Did you mean:\n"
             for match in close_matches:
                 suggestion_text += f"• {match}\n"
-            suggestion_text += "\n🎭 *Powered by* [BhediyaTheater](https://t.me/bhediyatheater)"
+            suggestion_text += "\n🎭 *Powered by* [Tigertheater](https://t.me/+Tbkw7GQzcB05M2U9)"
             send_safe_message(message.chat.id, suggestion_text)
         else:
-            bot.reply_to(message, f"😔 Sorry, couldn't find any movie matching '*{cleaned_name}*'\n\n🎭 *Powered by* [BhediyaTheater](https://t.me/bhediyatheater)", parse_mode='Markdown', disable_web_page_preview=True)
+            bot.reply_to(message, f"😔 Sorry, couldn't find any movie matching '*{cleaned_name}*'\n\n🎭 *Powered by* [Tigertheater](https://t.me/+Tbkw7GQzcB05M2U9)", parse_mode='Markdown', disable_web_page_preview=True)
         return
     
     # If exact match found, show details directly
