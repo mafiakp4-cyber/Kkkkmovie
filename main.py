@@ -12,8 +12,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Bot configuration
-BOT_TOKEN = os.getenv("TG_BOT_TOKEN") or "8476510332:AAFiPdMnGGHUVYDxsjD8UoN5_ycfF6BjPh0"
-OMDB_KEY = os.getenv("OMDB_API_KEY") or "8d917eec"
+BOT_TOKEN = "8476510332:AAFiPdMnGGHUVYDxsjD8UoN5_ycfF6BjPh0"
+OMDB_KEY = "8d917eec"
 OMDB_URL = "https://www.omdbapi.com/"
 
 # Initialize bot and Flask app
